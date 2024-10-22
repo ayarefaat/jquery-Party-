@@ -1,0 +1,145 @@
+:root{
+    --main-color:rgba(214, 46, 51 , 0.6);
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: inherit !important;
+}
+span{
+    display: inline-block;
+}
+
+section.home{
+    background-image:linear-gradient(var(--main-color),var(--main-color)),url('../imgs/events-heavenly-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    div.content{
+        height: 80vh;
+        h2{
+            font-size: 60px;
+        }
+        span.open{
+            bottom: 30%;
+            font-size: 30px;
+            cursor: pointer;
+            text-wrap: nowrap;
+        }
+    }
+   
+    div.sidebar{
+        background-color: #111;
+        top: 0;
+        left:0;
+        ul{
+            li{
+                font-size: 25px;
+                transition: color 0.4s ease ;
+                -webkit-transition: color 0.4s ease ;
+                -moz-transition: color 0.4s ease ;
+                -ms-transition: color 0.4s ease ;
+                -o-transition: color 0.4s ease ;
+                &.close{
+                    top:50px;
+                    right: 30px;
+                }
+                &:hover{
+                    color: rgba(214, 46, 51 , 0.4);
+                }
+            }
+        }
+        
+    }
+}
+section.details{
+    .details-box{
+        .singer{
+            h3{
+                background-color: var(--main-color);
+                cursor: pointer;
+                color: #fff;
+            }p.info{
+                background-color: #ccc;
+            }
+        }
+    }
+}
+section.counter{
+    background-image: linear-gradient(var(--main-color),var(--main-color)),url('../imgs/invitation-2508607__340.jpg');
+    .row{
+        .item{
+            width: 250px;
+            height: 125px;
+            border: 1px solid #fff;
+            h4{
+                line-height: 120px;
+                color: #fff;
+            }
+        }
+    }
+}
+section.contact{
+    .title{
+        h2{
+            font-size: 35px;
+        } 
+    }
+    .row{
+        .item{
+            h5{
+                font-size: 18px;
+                font-weight: 900;
+            }p{
+                color: #777;
+                &.email{
+                    color: #D62E33 ;
+                    span{
+                        color: #777;
+                    }
+                }
+            }
+            div.social{
+                span{
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #999;
+                    color: #777;
+                    cursor: pointer;
+                    line-height: 40px;
+                    transition: background-color 0.5s ease,border-color 0.5s ease;
+                    -webkit-transition: background-color 0.5s ease,border-color 0.5s ease;
+                    -moz-transition: background-color 0.5s ease,border-color 0.5s ease;
+                    -ms-transition: background-color 0.5s ease,border-color 0.5s ease;
+                    -o-transition: background-color 0.5s ease,border-color 0.5s ease;
+                    &:hover{
+                        border-color: #D62E33;
+                        background-color: #D62E33;
+                        color: #fff;
+                    }
+}
+            }
+            form{
+                p{
+                    span.letter-counter{
+                        color: #D62E33;
+                    }
+                }
+                input,textarea{
+                    &:focus{
+                        box-shadow: none;
+                        border: 1px solid #999;
+                    }
+                }
+                button{
+                    background-color: #D62E33;
+                    color: #fff;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
